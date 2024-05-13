@@ -137,7 +137,7 @@ for epoch in tqdm(range(epochs)):
     print(f"Test loss: {test_loss:.4f}, Test acc: {test_acc:.2f}%\n")
     if test_acc > best_accuracy:
         best_accuracy = test_acc
-        torch.save(model.state_dict(), 'best_model_student.pth')
+        torch.save(model.state_dict(), 'best_vgg.pth')
     test_losses.append(float(test_loss))
     test_accuracies.append(float(test_acc))
 
