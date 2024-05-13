@@ -362,4 +362,5 @@ Epoch: 49
 Train loss: 0.15678 | Train acc: 95.73%
 Test loss: 0.3187, Test acc: 92.84%
 
+#predicted labels for sampled images from test dataset
 tensor([3, 3, 3, 0, 0, 3, 3, 1, 2, 1, 0, 0])
