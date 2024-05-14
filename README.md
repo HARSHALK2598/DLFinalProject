@@ -11,24 +11,23 @@ Architecture for training Smaller Student Model using Pre-trained Teacher Model.
 Reference: Z. Tao, Q. Xia, and Q. Li, “Neuron manifold distillation for edge deep learning,” in Proc. IEEE/ACM 29th Int. Symp. Qual. Service, 2021, pp. 1–10.
 
 
-\nTeacher Model Architecture:
+Teacher Model Architecture:
 
 ![image](https://github.com/HARSHALK2598/DLFinalProject/assets/59302243/09132a7e-1e67-4e71-87d3-c42c2d3ccd45)
 
 
-\nStudent Model Architecture:
+Student Model Architecture:
 
 ![image](https://github.com/HARSHALK2598/DLFinalProject/assets/59302243/f93051dc-2d54-43f8-80da-5a4c2b48c34d)
 
 
-\nResults folder contains all plots. \n
-For Train/Test accuracy, please refer KD_student_output_logs.txt for KD_Student Model \n
-Baseline Student model: /Student Model/Baseline_Student_logs.txt \n
-Teacher Model: /Teacher Model/VGG_teacherModel_output.txt \n
-\n\n
+Results folder contains all plots. 
+For Train/Test accuracy, please refer KD_student_output_logs.txt for KD_Student Model .
+Baseline Student model: /Student Model/Baseline_Student_logs.txt .
+Teacher Model: /Teacher Model/VGG_teacherModel_output.txt .
 
-Trained Teacher Model is not uploaded due to size of 60MB. \n
-Trained Baseline Student model and KD student model can found in repository. \n
+Trained Teacher Model is not uploaded due to size of 60MB. 
+Trained Baseline Student model and KD student model can found in repository. 
 
 
 
