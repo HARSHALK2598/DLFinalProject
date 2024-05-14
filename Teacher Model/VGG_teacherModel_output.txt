@@ -1,0 +1,365 @@
+
+class category: ['glioma', 'meningioma', 'notumor', 'pituitary']
+
+4
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1         [-1, 64, 128, 128]           1,792
+              ReLU-2         [-1, 64, 128, 128]               0
+            Conv2d-3         [-1, 64, 128, 128]          36,928
+              ReLU-4         [-1, 64, 128, 128]               0
+         MaxPool2d-5           [-1, 64, 64, 64]               0
+            Conv2d-6          [-1, 128, 64, 64]          73,856
+              ReLU-7          [-1, 128, 64, 64]               0
+            Conv2d-8          [-1, 128, 64, 64]         147,584
+              ReLU-9          [-1, 128, 64, 64]               0
+        MaxPool2d-10          [-1, 128, 32, 32]               0
+           Conv2d-11          [-1, 256, 32, 32]         295,168
+             ReLU-12          [-1, 256, 32, 32]               0
+           Conv2d-13          [-1, 256, 32, 32]         590,080
+             ReLU-14          [-1, 256, 32, 32]               0
+           Conv2d-15          [-1, 256, 32, 32]         590,080
+             ReLU-16          [-1, 256, 32, 32]               0
+        MaxPool2d-17          [-1, 256, 16, 16]               0
+           Conv2d-18          [-1, 512, 16, 16]       1,180,160
+             ReLU-19          [-1, 512, 16, 16]               0
+           Conv2d-20          [-1, 512, 16, 16]       2,359,808
+             ReLU-21          [-1, 512, 16, 16]               0
+           Conv2d-22          [-1, 512, 16, 16]       2,359,808
+             ReLU-23          [-1, 512, 16, 16]               0
+        MaxPool2d-24            [-1, 512, 8, 8]               0
+           Conv2d-25            [-1, 512, 8, 8]       2,359,808
+             ReLU-26            [-1, 512, 8, 8]               0
+           Conv2d-27            [-1, 512, 8, 8]       2,359,808
+             ReLU-28            [-1, 512, 8, 8]               0
+           Conv2d-29            [-1, 512, 8, 8]       2,359,808
+             ReLU-30            [-1, 512, 8, 8]               0
+AdaptiveAvgPool2d-31            [-1, 512, 7, 7]               0
+           Linear-32                    [-1, 4]         100,356
+================================================================
+Total params: 14,815,044
+Trainable params: 100,356
+Non-trainable params: 14,714,688
+----------------------------------------------------------------
+Input size (MB): 0.19
+Forward/backward pass size (MB): 71.44
+Params size (MB): 56.51
+Estimated Total Size (MB): 128.14
+----------------------------------------------------------------
+
+  0%|          | 0/50 [00:00<?, ?it/s]
+  2%|▏         | 1/50 [03:43<3:02:13, 223.14s/it]
+  4%|▍         | 2/50 [04:28<1:34:44, 118.43s/it]
+  6%|▌         | 3/50 [04:49<57:50, 73.85s/it]   
+  8%|▊         | 4/50 [05:09<40:36, 52.96s/it]
+ 10%|█         | 5/50 [05:30<30:57, 41.28s/it]
+ 12%|█▏        | 6/50 [05:50<25:02, 34.14s/it]
+ 14%|█▍        | 7/50 [06:12<21:25, 29.90s/it]
+ 16%|█▌        | 8/50 [06:32<18:46, 26.81s/it]
+ 18%|█▊        | 9/50 [06:52<16:55, 24.76s/it]
+ 20%|██        | 10/50 [07:12<15:33, 23.34s/it]
+ 22%|██▏       | 11/50 [07:32<14:33, 22.39s/it]
+ 24%|██▍       | 12/50 [07:53<13:49, 21.83s/it]
+ 26%|██▌       | 13/50 [08:13<13:11, 21.39s/it]
+ 28%|██▊       | 14/50 [08:34<12:38, 21.06s/it]
+ 30%|███       | 15/50 [08:54<12:08, 20.81s/it]
+ 32%|███▏      | 16/50 [09:14<11:41, 20.63s/it]
+ 34%|███▍      | 17/50 [09:34<11:17, 20.54s/it]
+ 36%|███▌      | 18/50 [09:54<10:53, 20.41s/it]
+ 38%|███▊      | 19/50 [10:15<10:31, 20.37s/it]
+ 40%|████      | 20/50 [10:35<10:12, 20.41s/it]
+ 42%|████▏     | 21/50 [10:56<09:50, 20.37s/it]
+ 44%|████▍     | 22/50 [11:16<09:29, 20.33s/it]
+ 46%|████▌     | 23/50 [11:36<09:07, 20.29s/it]
+ 48%|████▊     | 24/50 [11:56<08:47, 20.28s/it]
+ 50%|█████     | 25/50 [12:16<08:27, 20.28s/it]
+ 52%|█████▏    | 26/50 [12:37<08:06, 20.28s/it]
+ 54%|█████▍    | 27/50 [12:57<07:46, 20.28s/it]
+ 56%|█████▌    | 28/50 [13:17<07:24, 20.22s/it]
+ 58%|█████▊    | 29/50 [13:37<07:03, 20.18s/it]
+ 60%|██████    | 30/50 [13:57<06:42, 20.14s/it]
+ 62%|██████▏   | 31/50 [14:18<06:24, 20.23s/it]
+ 64%|██████▍   | 32/50 [14:38<06:04, 20.23s/it]
+ 66%|██████▌   | 33/50 [14:58<05:42, 20.15s/it]
+ 68%|██████▊   | 34/50 [15:18<05:21, 20.08s/it]
+ 70%|███████   | 35/50 [15:37<04:59, 19.94s/it]
+ 72%|███████▏  | 36/50 [15:57<04:38, 19.86s/it]
+ 74%|███████▍  | 37/50 [16:17<04:17, 19.84s/it]
+ 76%|███████▌  | 38/50 [16:37<03:57, 19.77s/it]
+ 78%|███████▊  | 39/50 [16:56<03:37, 19.74s/it]
+ 80%|████████  | 40/50 [17:16<03:17, 19.71s/it]
+ 82%|████████▏ | 41/50 [17:35<02:57, 19.69s/it]
+ 84%|████████▍ | 42/50 [17:55<02:37, 19.67s/it]
+ 86%|████████▌ | 43/50 [18:15<02:17, 19.71s/it]
+ 88%|████████▊ | 44/50 [18:35<01:58, 19.76s/it]
+ 90%|█████████ | 45/50 [18:55<01:39, 19.80s/it]
+ 92%|█████████▏| 46/50 [19:15<01:19, 19.86s/it]
+ 94%|█████████▍| 47/50 [19:35<00:59, 19.88s/it]
+ 96%|█████████▌| 48/50 [19:54<00:39, 19.89s/it]
+ 98%|█████████▊| 49/50 [20:14<00:19, 19.90s/it]
+100%|██████████| 50/50 [20:34<00:00, 19.89s/it]
+100%|██████████| 50/50 [20:34<00:00, 24.70s/it]
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Clipping input data to the valid range for imshow with RGB data ([0..1] for floats or [0..255] for integers).
+Epoch: 0
+-------
+Train loss: 0.48743 | Train acc: 85.05%
+Test loss: 0.4787, Test acc: 87.73%
+
+Epoch: 1
+-------
+Train loss: 0.24841 | Train acc: 92.61%
+Test loss: 0.3026, Test acc: 92.07%
+
+Epoch: 2
+-------
+Train loss: 0.19975 | Train acc: 93.73%
+Test loss: 0.3905, Test acc: 89.02%
+
+Epoch: 3
+-------
+Train loss: 0.14440 | Train acc: 95.10%
+Test loss: 0.2151, Test acc: 93.14%
+
+Epoch: 4
+-------
+Train loss: 0.11156 | Train acc: 96.01%
+Test loss: 0.2650, Test acc: 92.45%
+
+Epoch: 5
+-------
+Train loss: 0.15275 | Train acc: 94.96%
+Test loss: 0.4619, Test acc: 88.86%
+
+Epoch: 6
+-------
+Train loss: 0.17796 | Train acc: 95.05%
+Test loss: 0.3442, Test acc: 91.61%
+
+Epoch: 7
+-------
+Train loss: 0.15622 | Train acc: 95.29%
+Test loss: 0.5729, Test acc: 87.71%
+
+Epoch: 8
+-------
+Train loss: 0.10642 | Train acc: 96.41%
+Test loss: 0.2869, Test acc: 92.60%
+
+Epoch: 9
+-------
+Train loss: 0.13623 | Train acc: 95.82%
+Test loss: 0.3018, Test acc: 92.00%
+
+Epoch: 10
+-------
+Train loss: 0.15575 | Train acc: 95.34%
+Test loss: 0.3530, Test acc: 92.30%
+
+Epoch: 11
+-------
+Train loss: 0.14860 | Train acc: 95.52%
+Test loss: 0.2627, Test acc: 93.67%
+
+Epoch: 12
+-------
+Train loss: 0.13581 | Train acc: 95.52%
+Test loss: 0.4511, Test acc: 90.91%
+
+Epoch: 13
+-------
+Train loss: 0.12845 | Train acc: 95.99%
+Test loss: 0.2898, Test acc: 92.61%
+
+Epoch: 14
+-------
+Train loss: 0.12409 | Train acc: 96.17%
+Test loss: 0.4380, Test acc: 91.01%
+
+Epoch: 15
+-------
+Train loss: 0.15529 | Train acc: 95.08%
+Test loss: 0.3590, Test acc: 92.91%
+
+Epoch: 16
+-------
+Train loss: 0.14094 | Train acc: 95.83%
+Test loss: 0.4065, Test acc: 91.84%
+
+Epoch: 17
+-------
+Train loss: 0.12539 | Train acc: 96.20%
+Test loss: 0.2910, Test acc: 93.51%
+
+Epoch: 18
+-------
+Train loss: 0.10040 | Train acc: 96.95%
+Test loss: 0.3033, Test acc: 93.52%
+
+Epoch: 19
+-------
+Train loss: 0.11825 | Train acc: 96.18%
+Test loss: 0.4458, Test acc: 91.39%
+
+Epoch: 20
+-------
+Train loss: 0.12322 | Train acc: 96.24%
+Test loss: 0.3401, Test acc: 91.76%
+
+Epoch: 21
+-------
+Train loss: 0.12351 | Train acc: 96.48%
+Test loss: 0.3681, Test acc: 91.45%
+
+Epoch: 22
+-------
+Train loss: 0.17523 | Train acc: 94.99%
+Test loss: 0.4177, Test acc: 91.16%
+
+Epoch: 23
+-------
+Train loss: 0.14713 | Train acc: 95.80%
+Test loss: 0.2944, Test acc: 92.91%
+
+Epoch: 24
+-------
+Train loss: 0.17479 | Train acc: 95.26%
+Test loss: 0.4740, Test acc: 90.85%
+
+Epoch: 25
+-------
+Train loss: 0.11350 | Train acc: 96.45%
+Test loss: 0.3238, Test acc: 92.99%
+
+Epoch: 26
+-------
+Train loss: 0.10463 | Train acc: 96.80%
+Test loss: 0.3067, Test acc: 92.75%
+
+Epoch: 27
+-------
+Train loss: 0.07597 | Train acc: 97.58%
+Test loss: 0.3101, Test acc: 92.91%
+
+Epoch: 28
+-------
+Train loss: 0.16011 | Train acc: 95.13%
+Test loss: 0.3080, Test acc: 92.98%
+
+Epoch: 29
+-------
+Train loss: 0.12046 | Train acc: 96.11%
+Test loss: 0.3266, Test acc: 91.38%
+
+Epoch: 30
+-------
+Train loss: 0.14598 | Train acc: 95.75%
+Test loss: 0.3929, Test acc: 92.23%
+
+Epoch: 31
+-------
+Train loss: 0.11288 | Train acc: 96.48%
+Test loss: 0.3782, Test acc: 92.15%
+
+Epoch: 32
+-------
+Train loss: 0.14999 | Train acc: 95.92%
+Test loss: 0.3793, Test acc: 91.31%
+
+Epoch: 33
+-------
+Train loss: 0.10834 | Train acc: 96.55%
+Test loss: 0.3124, Test acc: 93.06%
+
+Epoch: 34
+-------
+Train loss: 0.10010 | Train acc: 96.92%
+Test loss: 0.2862, Test acc: 92.68%
+
+Epoch: 35
+-------
+Train loss: 0.09495 | Train acc: 96.92%
+Test loss: 0.2431, Test acc: 93.98%
+
+Epoch: 36
+-------
+Train loss: 0.13884 | Train acc: 95.54%
+Test loss: 0.3259, Test acc: 92.53%
+
+Epoch: 37
+-------
+Train loss: 0.17759 | Train acc: 95.01%
+Test loss: 0.4404, Test acc: 90.24%
+
+Epoch: 38
+-------
+Train loss: 0.12238 | Train acc: 96.39%
+Test loss: 0.3037, Test acc: 93.14%
+
+Epoch: 39
+-------
+Train loss: 0.09121 | Train acc: 97.27%
+Test loss: 0.3097, Test acc: 90.70%
+
+Epoch: 40
+-------
+Train loss: 0.10651 | Train acc: 97.01%
+Test loss: 0.4092, Test acc: 88.11%
+
+Epoch: 41
+-------
+Train loss: 0.11951 | Train acc: 96.31%
+Test loss: 0.4507, Test acc: 90.93%
+
+Epoch: 42
+-------
+Train loss: 0.14229 | Train acc: 95.76%
+Test loss: 0.3460, Test acc: 92.76%
+
+Epoch: 43
+-------
+Train loss: 0.16933 | Train acc: 95.24%
+Test loss: 0.3738, Test acc: 91.01%
+
+Epoch: 44
+-------
+Train loss: 0.13661 | Train acc: 96.04%
+Test loss: 0.3143, Test acc: 92.30%
+
+Epoch: 45
+-------
+Train loss: 0.12014 | Train acc: 96.22%
+Test loss: 0.2756, Test acc: 93.06%
+
+Epoch: 46
+-------
+Train loss: 0.09375 | Train acc: 97.22%
+Test loss: 0.2317, Test acc: 93.52%
+
+Epoch: 47
+-------
+Train loss: 0.07294 | Train acc: 97.55%
+Test loss: 0.2837, Test acc: 94.97%
+
+Epoch: 48
+-------
+Train loss: 0.06052 | Train acc: 97.87%
+Test loss: 0.1954, Test acc: 92.19%
+
+Epoch: 49
+-------
+Train loss: 0.04923 | Train acc: 98.13%
+Test loss: 0.1312, Test acc: 95.35%
+
+tensor([3, 3, 3, 0, 0, 3, 3, 1, 2, 1, 0, 0])
