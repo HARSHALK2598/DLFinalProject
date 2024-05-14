@@ -27,7 +27,7 @@ Results folder contains all plots.
 **For runtime Train/Test accuracy and Train/Test loss,** \
 please refer KD_student_output_logs.txt for KD_Student Model . \
 Baseline Student model: /Student Model/Baseline_Student_logs.txt . \
-Teacher Model: /Teacher Model/VGG_teacherModel_output.txt . \
+Teacher Model: /Teacher Model/VGG_teacherModel_output.txt . 
 
 
 Trained Teacher Model is not uploaded due to size of 60MB.  \
