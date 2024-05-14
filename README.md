@@ -8,7 +8,7 @@ Architecture for training Smaller Student Model using Pre-trained Teacher Model.
 
 ![Model Architecture](https://github.com/HARSHALK2598/DLFinalProject/assets/59302243/ae6e8b85-6ff9-4f72-bfed-2e186dcd0638)
 
-Reference: Z. Tao, Q. Xia, and Q. Li, “Neuron manifold distillation for edge deep learning,” in Proc. IEEE/ACM 29th Int. Symp. Qual. Service, 2021, pp. 1–10. \
+Reference: Z. Tao, Q. Xia, and Q. Li, “Neuron manifold distillation for edge deep learning,” in Proc. IEEE/ACM 29th Int. Symp. Qual. Service, 2021, pp. 1–10. 
 
 
 Teacher Model Architecture:
