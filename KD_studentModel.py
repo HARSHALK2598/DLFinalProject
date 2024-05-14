@@ -181,10 +181,12 @@ for epoch in tqdm(range(epochs)):
 
         X, y = X.to(device), y.to(device)
         # 1. Forward pass
+
+        # Make predictions from Student and Teacher Model
         y_pred = student_model(X)
         model.eval()
         teacher_pred = model(X)
-        # 2. Calculate loss and accuracy (per batch)
+        # 2. Calculate KD loss and accuracy (per batch)
         loss = distillation_loss(y_pred, teacher_pred, y) #loss_fn(y_pred, y)
         train_loss += loss
         train_acc += accuracy_fn(y_true=y,
